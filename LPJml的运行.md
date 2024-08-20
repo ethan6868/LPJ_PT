@@ -1,6 +1,7 @@
 # LPJml的运行
 # 1. 查看命令帮助
 ```bash
+# lpjml命令帮助
 lpjml -h
 #     lpjml C Version 5.7.9 (Jul 16 2024) Help
 #     ========================================
@@ -37,12 +38,12 @@ lpjml lpj.js
 ```
 在编译的编译时有mpich，可以使用并行执行
 ```bash
-mpirun --allow-run-as-root -np 3 lpjml lpj.js #3为并行数量，根据自己设备情况定。
-nohup mpirun --allow-run-as-root -np 3 lpjml lpj.js > lpjml20240809.log 2>&1 & #在后台运行，命令输出内容存储到lpjml20240809.log文件件中
+mpirun --allow-run-as-root -np 3 lpjml lpj.js # 3为并行数量，根据自己设备情况定。
+nohup mpirun --allow-run-as-root -np 3 lpjml lpj.js > lpjml20240809.log 2>&1 & # 在后台运行，命令输出内容存储到lpjml20240809.log文件件中
 ```
 
 # 3. 正式开始模拟
 ```bash
 lpjml -DFROM_RESTART lpj.js
-lpjml -DFROM_RESTART -outpath /a_path/b_path/c_path/ lpj.js #如果配置文件中写输输出文件是相对路径，则推荐写这个参数或配置成环境变量LPJOUTPATH
+lpjml -DFROM_RESTART -outpath /a_path/b_path/c_path/ lpj.js # 如果配置文件中写输输出文件是相对路径，则推荐写这个参数或配置成环境变量LPJOUTPATH
 ```
