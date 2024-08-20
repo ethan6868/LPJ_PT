@@ -46,4 +46,5 @@ nohup mpirun --allow-run-as-root -np 3 lpjml lpj.js > lpjml20240809.log 2>&1 & #
 ```bash
 lpjml -DFROM_RESTART lpj.js
 lpjml -DFROM_RESTART -outpath /a_path/b_path/c_path/ lpj.js # 如果配置文件中写输输出文件是相对路径，则推荐写这个参数或配置成环境变量LPJOUTPATH
+nohup mpirun --allow-run-as-root -np 3 lpjml -DFROM_RESTART lpj.js > lpjml_from_restart20240809.log 2>&1 &
 ```
