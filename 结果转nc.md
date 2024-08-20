@@ -1,6 +1,7 @@
 # GPP,NPP,RH转nc
-这里是使用bin2cdf把GPP,NPP,RH数据从bin二进制格式转为nc格式
+这里是使用bin2cdf把GPP,NPP,RH数据从bin二进制格式转为nc格式。
 ```bash
+#查看bin2cdf帮助
 bin2cdf -h
 #    bin2cdf (Jul 16 2024) Help
 #    ==========================
